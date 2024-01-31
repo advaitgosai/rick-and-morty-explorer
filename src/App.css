@@ -6,35 +6,50 @@
   background-color: #282c34;
   min-height: 10vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.App-title {
   color: white;
 }
 
 nav a {
   color: #61dafb;
-  margin: 0 0px;
+  margin: 0 10px; /* Add some space between links */
+  text-decoration: none; /* Remove underlines from links */
+  font-size: 1.2em; /* Increase font size for better readability */
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #88c0d0; /* Change color on hover for interactivity */
 }
 
 body {
   margin: 0;
+  padding-top: 20px; /* Add space below the header */
   background-color: #0b0f1a;
+  font-family: 'Orbitron', sans-serif; /* Consistent font */
 }
-
-/* .character-card, .episode-card, .location-card {
-  border: 1px solid #ccc;
-  margin: 10px;
-  padding: 10px;
-  display: inline-block;
-  background-color: white;
-  color: black;
-} */
 
 button {
-  margin: 10px;
-  padding: 5px 10px;
+  background-color: #4c6ef5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-family: 'Orbitron', sans-serif;
+  transition: background-color 0.3s ease;
 }
 
-
+button:hover {
+  background-color: #5e81ac;
+}

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useQuery, gql } from '@apollo/client';
 import { Link } from 'react-router-dom';
-import '../styles/Episodes.css'; // Import CSS for styling
+import '../styles/Episodes.css';
 
 const GET_EPISODES = gql`
   query GetEpisodes($page: Int) {

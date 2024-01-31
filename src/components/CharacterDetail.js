@@ -49,9 +49,6 @@ function CharacterDetail() {
   const totalEpisodes = character.episode.length;
   // const seasons = character.episode.map(ep => parseInt(ep.episode.split('E')[0].replace('S', '')));
   const seasons = ['S01', 'S02', 'S03', 'S04', 'S05'];
-  const earliestSeason = Math.min(...seasons);
-  const latestSeason = Math.max(...seasons);
-
 
   return (
     <div className="character-detail-container">
@@ -65,14 +62,14 @@ function CharacterDetail() {
           </div>
         </div>
         <ul>
-            <li><p id="ix">{'Total Episodes   |'}</p> {totalEpisodes}</li>
-            <li><p id="ix">{'Status   |'}</p>{character.status}</li>
-            <li><p id="ix">{'Gender   |'}</p> {character.gender}</li>
-            <li><p id="ix">{'L   |'}</p> {character.location.name}</li>
-            <li><p id="ix">{'Created   |'}</p> {new Date(character.created).toDateString()}</li>
-            <li><p id="ix">{'Species   |'}</p> {character.species}</li>
-            <li><p id="ix">{'O   |'}</p> {character.origin.name}</li>
-            <li><p id="ix">{'Type   |'}</p> {character.type === '' ? 'unknown' : character.type}</li>
+            <li><p id="ix">{'Total Episodes   '}</p> {totalEpisodes}</li>
+            <li><p id="ix">{'Status   '}</p>{character.status}</li>
+            <li><p id="ix">{'Gender   '}</p> {character.gender}</li>
+            <li><p id="ix">{'Location   '}</p> {character.location.name}</li>
+            <li><p id="ix">{'Created   '}</p> {new Date(character.created).toDateString()}</li>
+            <li><p id="ix">{'Species   '}</p> {character.species}</li>
+            <li><p id="ix">{'Origin   '}</p> {character.origin.name}</li>
+            <li><p id="ix">{'Type   '}</p> {character.type === '' ? 'unknown' : character.type}</li>
         </ul>
       </div>
       <div className="episodes-column">

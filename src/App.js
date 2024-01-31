@@ -14,7 +14,7 @@ function App() {
     <Router>
       <div className="App">
         <header className="App-header">
-          <h1>Rick and Morty Explorer</h1>
+          <h2 className="App-title">Rick & Morty Explorer</h2>
           <nav>
             <Link to="/">Home</Link> | 
             <Link to="/characters"> Characters</Link> | 
