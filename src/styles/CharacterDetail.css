@@ -1,0 +1,115 @@
+ .character-detail-container {
+    display: flex;
+    justify-content: start;
+    padding: 20px;
+    background-color: #0b0f1a;
+  }
+  
+  .character-card-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid #2e344e;
+    border-radius: 10px;
+    margin-right: 20px;
+    background-color: #1c2130;
+  }
+  
+  .character-detail-card, .character-info ul {
+    width: 100%;
+  }
+  
+  .character-detail-image {
+    max-width: 150px;
+    border-radius: 10px;
+  }
+  
+  p {
+    margin: 0px 0; 
+    display: flex;
+    align-items: center;
+    font-size: 0.9em; 
+  }
+
+  li {
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+    color: #88c0d0;
+  }
+
+
+  #ix {
+    margin-right: 6px; 
+    color: #ebcb8b;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+
+  h2 {
+    color: #c7d2fd;
+  }
+
+  .episodes-seasons{
+    color: #ebcb8b;
+  }
+
+  .episodes-column {
+    flex: 4;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+  }
+  
+  .season-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    min-width: 125px;
+    max-width: 200px;
+  }
+  
+  .episode-cards {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .episode-card-horizontal {
+    background-color: #1c2130;
+    color: #88c0d0;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .episode-card-horizontal:hover {
+    background-color: #2e344e;
+  }
+
+  .no-episodes {
+    color: #a0a0a0;
+    font-style: italic;
+  }
+
+  @media (max-width: 768px) {
+    .character-detail-container {
+      flex-direction: column;
+    }
+    .episodes-column {
+      flex-direction: column;
+    }
+    .season-column {
+      align-items: start;
+    }
+  }
+  

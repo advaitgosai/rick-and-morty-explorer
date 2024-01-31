@@ -1,0 +1,115 @@
+.characters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  background-color: #0b0f1a;
+}
+
+.character-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1c2130; 
+  border: 2px solid #2e344e;
+  border-radius: 10px;
+  padding: 15px;
+  text-decoration: none;
+  color: #c7d2fe;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+.character-card:hover {
+  transform: scale(1.05);
+  border-color: #4c6ef5; 
+}
+
+.character-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  border: 2px solid #2e344e; 
+}
+
+.character-info {
+  text-align: left;
+  width: 100%;
+  margin-top: 10px; 
+}
+
+.character-info p {
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+  color: #88c0d0;
+}
+
+#ix {
+  margin-right: 15px; 
+  color: #ebcb8b; 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+body {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  background-color: #00ff00;
+  color: #0b0f1a;
+  border: 2px solid #00ff00; 
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  transition: background-color 0.3s, color 0.3s;
+  box-shadow: 0 0 10px #00ff00;
+}
+
+.pagination button:hover {
+  background-color: #0b0f1a;
+  color: #00ff00;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid #2e344e;
+    border-radius: 5px;
+    background-color: #1c2130;
+    color: #88c0d0;
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s ease;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #4c6ef5; 
+  }
+  
+  .search-count {
+    color: #a3be8c;
+    font-size: 0.9em;
+    justify-content: center;
+  }
+
+  

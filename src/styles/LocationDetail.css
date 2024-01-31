@@ -1,0 +1,56 @@
+  .location-detail-container {
+    padding: 20px;
+    background-color: #0b0f1a;
+    color: #88c0d0;
+  }
+  
+  .location-info {
+    border: 2px solid #2e344e;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #1c2130;
+  }
+  
+  .residents-container {
+    margin-top: 20px;
+  }
+  
+  .residents-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+
+  .residents-title {
+    color: #ebcb8b;
+  }
+  
+  .resident-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1c2130;
+    border: 2px solid #2e344e;
+    border-radius: 10px;
+    padding: 15px; 
+    text-decoration: none;
+    color: #c7d2fe; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .resident-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .resident-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .resident-card p {
+    margin-top: 10px;
+  }
+  

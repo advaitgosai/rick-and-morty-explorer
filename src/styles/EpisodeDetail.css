@@ -1,0 +1,46 @@
+  .episode-detail-container {
+    padding: 20px;
+  }
+  
+  .episode-info {
+    border: 2px solid #2e344e;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #1c2130;
+    color: #88c0d0;
+  }
+  
+  .character-cards-container {
+    margin: 10px;
+  }
+
+  .character-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1c2130;
+    border: 2px solid #2e344e;
+    border-radius: 10px;
+    padding: 15px; 
+    text-decoration: none;
+    color: #c7d2fe; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .character-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .character-card p {
+    margin-top: 10px;
+  }
+
+  .residents-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }

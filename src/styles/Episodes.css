@@ -1,0 +1,47 @@
+.episodes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  background-color: #0b0f1a;
+}
+
+.season-column {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.episodes-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.episode-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1c2130; 
+  border: 2px solid #2e344e;
+  border-radius: 10px;
+  padding: 15px;
+  text-decoration: none;
+  color: #c7d2fe;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+.no-episodes {
+  color: #a0a0a0;
+  font-style: italic;
+}
+
+.card-info {
+  color: #88c0d0;
+}
+
+@media (max-width: 768px) {
+  .episodes-container {
+    flex-direction: column;
+  }
+}
